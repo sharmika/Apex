@@ -55,6 +55,7 @@ public class LoginDAO {
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		} finally {
+			/* closing connection */
 			if (ps != null) {
 				try {
 					ps.close();
